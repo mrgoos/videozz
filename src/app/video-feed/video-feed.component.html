@@ -1,0 +1,9 @@
+<div class="ui-g">
+  <div class="ui-g-12 centerDiv">VIDEO FEED</div>
+  <div class="ui-g-4 centerDiv">TITLE</div>
+  <div class="ui-g-4 centerDiv">VIEWS</div>
+  <div class="ui-g-4 centerDiv">VIDEO</div>
+  <div class="ui-g-12" *ngFor="let video of videos">
+    <app-video-item [video]="video"></app-video-item>
+  </div>
+</div>

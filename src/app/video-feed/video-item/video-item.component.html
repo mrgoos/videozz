@@ -1,0 +1,6 @@
+<label class="ui-g-4 centerDiv">{{video.title}}</label>
+<label class="ui-g-4 centerDiv">{{video.views}}</label>
+<div class="ui-g-4 centerDiv">
+  <iframe *ngIf="isVideoDataValid(); else errorMessage" [src]="videoSource"></iframe>
+  <ng-template #errorMessage>{{video.source}} video is missing</ng-template>
+</div>
